@@ -1,0 +1,345 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+.landing-page {
+  display: flex;
+  margin-top: 5vw;
+  margin-left: 13vw;
+  margin-right: 13vw;
+  gap: 17vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-content{
+    width: 30vw;
+}
+
+.left-content h1{
+    font-size: 3vw;
+    color: #904DC4;
+}
+
+.left-content p{
+    font-size: 1.5vw;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+}
+
+.button-content-group-landing{
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.landing-page-standar-button {
+  text-decoration: none;
+  border: 1px solid #904DC4;
+  padding: 2vh 3vw;
+  font-size: 2vh;
+  color: black;
+}
+
+.user-review{
+    font-size: 1vw;
+    margin-top: 1vw;
+}
+
+.right-content img{
+    height: 32vw;
+}
+
+.left-conent{
+    width: 29vw;
+}
+
+.left-conent h1{
+    color: #904DC4;
+    font-size: 3vw;
+}
+
+.left-conent > p:nth-child(2){
+    font-size: 1.5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+.user-review p {
+  font-size: 1.3vw;
+}
+
+.landing-page-secondary-button {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 2vh 3vw;
+  font-size: 2vh;
+  color: white;
+  background: #904DC4;
+}
+
+.user-review span {
+  color: purple;
+}
+
+.semi-title-pink{
+    font-size: 1.5vw;
+    color: #904DC4;
+    font-weight: 600;
+}
+
+.landing-page-extra-content h1{
+    font-size: 3vw;
+}
+
+.landing-page-extra-content > p:nth-child(3){
+    font-size: 1.5vw;
+    color: gray;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+#load-more-content-landing-page-about-us{
+text-decoration: none;
+border: 1px solid #904DC4;
+padding: 2vh 3vw;
+font-size: 2vh;
+color: black;
+background: white;
+margin-top: 2vh;
+cursor: pointer;
+}
+
+.landing-page-extra-content{
+    margin-left: 13vw;
+    margin-right: 13vw;
+    margin-top: 10vh;
+}
+
+.page-imporant-information{
+    background: #542D73;
+    display: grid;
+    margin-top: 10vh;
+    align-items: center;
+    justify-items: center;
+    padding: 2vw;
+    margin-bottom: 10vh;
+}
+
+.page-imporant-information h1{
+    font-size: 3vw;
+    text-align: center;
+    color: white;
+}
+
+.imporante-values-flex{
+    display: flex;
+    color: white;
+    margin-top: 5vh;
+    gap: 4vw;
+}
+
+.imporant-value-gruper{
+    text-align: center;
+}
+
+.imporant-value-gruper h1 {
+    font-size: 2.0vw;
+  }
+
+.imporante-values-flex p {
+    font-size: 1.3vw;
+    color: #DCC3EF;
+}
+
+.app-info-main-container{
+    margin-left: 13vw;
+    margin-right: 13vw;
+}
+
+.main-text-container h1{
+    font-size: 3vh;
+}
+
+.main-text-container p{
+    font-size: 1.3vw;
+    color: gray;
+}
+
+.main-container-apps-thinqs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.app-thing-iteam{
+    height:18vh;
+}
+
+
+.app-thing-iteam img{
+    height: 2vw;
+    border: 0.3vh solid purple;
+    border-radius: 1vh;
+    padding: 1vh;
+}
+
+.app-thing-iteam h2{
+    font-size: 1vw;
+}
+
+.app-thing-iteam p{
+    font-size: 0.8vw;
+}
+
+.more-app-things-main-container{
+    display: flex;
+    gap: 3vw;
+    margin-top: 6vh;
+}
+
+.left-side-app-explain-text{
+    height: 9vh;
+}
+
+left-side-app-explain-text h1 {
+  color: #904DC4;
+  font-size: 2vw;
+}
+
+.left-side-app-explain-text h1 span{
+    color: black;
+}
+
+.left-side-app-explain-text p{
+    font-size: 1vw;
+}
+
+.right-side-app-things{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 2vh;
+}
+
+.app-thing-secondary-blog{
+    display: flex;
+    gap: 1vw;
+}
+
+.app-thing-secondary-blog img {
+  height: 2vh;
+}
+
+.app-thing-secondary-blog {
+  display: flex;
+  gap: 1vw;
+}
+
+.app-thing-secondary-blog img {
+  height: 2vh;
+}
+
+.text-group h2{
+font-size: 1.2vw;
+}
+
+.text-group p{
+font-size: 0.8vw;
+color: gray;
+}
+
+.left-side-app-explain-text > h1:nth-child(1){
+color: #904DC4;
+}
+
+.step-by-step-main-container {
+  margin-left: 13vw;
+  margin-right: 13vw;
+}
+
+.main-title-container h1 {
+  font-size: 3vh;
+  color: #904DC4;
+}
+
+.main-title-container h1 span{
+    color: black;
+    font-size: 3vw;
+}
+
+.more-text-container-step-by-step{
+font-size: 1.3vw;
+color: gray;
+}
+
+.content-articles-main-container{
+    display: grid;
+    grid-template-columns: repeat(2, 6fr);
+    align-items: center;
+    justify-items: center;
+    margin-top: 8vh;
+}
+
+.text-container-stats {
+  text-align: left;
+  height: 35vh;
+  margin-bottom: 8vh;
+}
+
+text-container-stats p {
+  color: gray;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.text-container-stats h1{
+    font-size: 2vw;
+}
+
+.text-title-more-artices{
+    font-size: 1.3vw;
+    color: #904DC4;
+    font-weight: 800;
+}
+
+.content-articles-main-container img {
+  height: 35vh;
+  margin-bottom: 8vh;
+}
+
+.under-middel-arrow-content{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 5vw;
+}
+
+.last-step-container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.last-step-container img{
+    height: 19vw;
+}
+
+html body section div.step-by-step-main-container div.last-step-container div p.text-title-more-artices{
+    font-size: 1.3vw;
+    color: #904DC4;
+    font-weight: 800;
+}
+
+html body section div.step-by-step-main-container div.last-step-container div h1{
+    font-size: 2vw;
+}
+
+.step-by-step-main-container > p:nth-child(2){
+font-size: 1.3vw;
+color: gray;
+}

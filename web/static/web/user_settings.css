@@ -1,0 +1,142 @@
+*{
+  margin:0px;
+  padding:0px;
+  font-family: sans-serif;
+}
+
+section{
+margin-left: 12vw;
+margin-right: 12vw;
+margin-top: 7vh;
+width: 77vw;
+display: flex;
+}
+
+.lefet-side-panel {
+  background: #904DC4;
+  height: 57vh;
+  padding: 1vw 1vw;
+  border-radius: 3vw;
+  left: 1vw;
+  position: relative;
+  width: 20vw;
+  z-index: 55;
+}
+
+html body section div.lefet-side-panel img{
+height: 8vw;
+position: relative;
+left: 50%;
+transform: translate(-50%,0%);
+border-radius: 4vw;
+}
+
+html body section div.lefet-side-panel h1.username{
+margin-top: 2vh;
+text-align: center;
+color: white;
+font-size: 2vw;
+}
+
+.type_of_user{
+text-align: center;
+margin-top: 1vh;
+font-size: 1.5vw;
+color: #542D73;
+font-weight: 600;
+}
+
+html body section div.lefet-side-panel p.text{
+margin-top: 2vh;
+font-size: 1.2vw;
+text-align: center;
+color: white;
+}
+
+html body section div.lefet-side-panel div.social-media-flex{
+display: flex;
+gap: 1vw;
+align-items: center;
+align-content: center;
+justify-content: center;
+margin-top: 2vh;
+margin-bottom: 4vh;
+}
+
+.social-media-flex a img {
+  height: 4vw;
+}
+
+.right-side-panel{
+width: 40vw;
+border: 0.1vw solid black;
+height: 50vh;
+position: relative;
+background: white;
+top: 2vw;
+padding-left: 2vw;
+}
+
+html body section div.right-side-panel form{
+padding: 2vw 1vw;
+}
+
+html body section div.right-side-panel form h1{
+font-size: 2vw;
+}
+
+html body section div.right-side-panel form p{
+font-size: 1vw;
+color: gray;
+}
+
+.social-media-flex > a:nth-child(1) > img:nth-child(1){
+height:4vw;
+}
+.social-media-flex > a:nth-child(2) > img:nth-child(1){
+height:4vw;
+}
+.social-media-flex > a:nth-child(3) > img:nth-child(1){
+height:4vw;
+}
+
+.lefet-side-panel > a:nth-child(6){
+position: relative;
+left: 29%;
+text-decoration: none;
+color: white;
+border: 0.1vw solid white;
+padding: 1vw 2vw;
+transform: translate(-50%,-50%);
+}
+
+.label-container{
+margin-top: 1vw;
+}
+
+html body section div.right-side-panel form div.label-container div.container{
+margin-bottom: 1vw;
+}
+
+.container input {
+  width: 31vw;
+  height: 3vh;
+  margin-top: 0.3vw;
+}
+
+html body section div.right-side-panel form button{
+border: 0.1vw solid black;
+background: none;
+padding: 1vw 3vw;
+border-radius: 0.3vw;
+margin-top: 1vw;
+font-size: 0.8vw;
+background: #AB5AE8;
+color: white;
+cursor:pointer;
+}
+
+html body section div.right-side-panel form button:hover{
+background: #D1B5E6;
+cursor:pointer;
+}

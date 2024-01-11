@@ -1,0 +1,76 @@
+*{
+  margin:0px;
+  padding:0px;
+  font-family: sans-serif;
+}
+
+footer {
+  background: #542D73;
+  display: flex;
+  margin-top: 15vh;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 61vw;
+  min-height: 9vh;
+  height: auto;
+}
+
+.footer-left-section{
+display: flex;
+justify-items: center;
+align-items: center;
+}
+
+
+.footer-left-section img{
+height: 7vw;
+}
+
+.left-text-section {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(1, 6fr);
+  font-size: 1vw;
+  gap: 3vh;
+}
+
+
+.left-text-section a {
+  text-decoration: none;
+  color: white;
+  margin: 0vh;
+}
+
+.footer-right-section{
+display: grid;
+grid-template-columns: repeat(1, 6fr);
+align-items: center;
+justify-items: center;
+height: 9vh;
+}
+
+.social-links-sections{
+gap: 3vw;
+display: flex;
+}
+
+.social-links-sections a img {
+  height: 2vw;
+}
+
+html body footer div.footer-right-section p{
+color: white;
+font-size: 0.9vw;
+}
+
+.social-links-sections a img:hover {
+  height: 2vw;
+  opacity: 0.5;
+  transition: 200ms ease;
+}
+
+.left-text-section a:hover {
+  text-decoration: underline;
+  color: white;
+}

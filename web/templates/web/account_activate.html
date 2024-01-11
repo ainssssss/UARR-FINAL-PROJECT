@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UARR</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'web/account_activate.css' %}">
+
+</head>
+{% include "web/header.html" %}
+
+<section>
+    <div class="content-container">
+        <img src="{% static 'web/images/positive.png' %}" alt="afirmative">
+        <h1>Gracias por activar tu cuenta</h1>
+        <p>Ya puedes cerrar esta ventana</p>
+    </div>
+</section>
+{% include "web/footer.html" %}
+
+</body>
+</html>

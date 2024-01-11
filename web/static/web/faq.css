@@ -1,0 +1,52 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+details {
+    padding: 1vw 1vw 0vw;
+    height: 2vw;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    border-radius: 1vh;
+}
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 1vw;
+  height: auto;
+  min-height: 3vw;
+}
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
+section{
+margin-left: 13vw;
+margin-right: 13vw;
+}
+
+html body section h1{
+font-size: 1.5vw;
+color: #904DC4;
+font-weight: 600;
+margin-top: 5vh;
+}
+
+html body section h1 span{
+font-size: 3vw;
+color: black;
+}
+
+html body section p{
+font-size: 1.5vw;
+color: gray;
+margin-top: 1vw;
+margin-bottom: 1vw;
+}

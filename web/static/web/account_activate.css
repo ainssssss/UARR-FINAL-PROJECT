@@ -1,0 +1,32 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: sans-serif;
+}
+
+section{
+display: flex;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 14vh;
+  margin-bottom: 20.5vh;
+}
+
+.content-container img{
+    height: 18.4vw;
+}
+
+.content-container h1{
+  color: green;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+  text-align: center;
+}
+
+
+.content-container p{
+  text-align: center;
+  color: gray;
+}

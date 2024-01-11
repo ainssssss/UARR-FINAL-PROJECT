@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>UARR</title>
+      <link rel="icon" type="image/x-icon" href="{% static 'web/images/logo.ico' %}">
+</head>
+<body>
+<link rel="stylesheet" href="{% static 'web/faq.css' %}">
+
+
+<link rel="stylesheet" href="{% static 'web/faq.css' %}">
+{% include "web/header.html" %}
+<section>
+<h1>FREQUENTLY ASKED<br><span>QUESTIONS</span></h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
+{% for faq in faqs %}
+<details>
+    <summary>{{faq.question}}</summary>
+    {{faq.answer}}
+</details>
+{% endfor %}
+</section>
+
+{% include "web/footer.html" %}
+</body>
+</html>

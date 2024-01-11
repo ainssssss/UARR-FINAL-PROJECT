@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>UARR</title>
+      <link rel="icon" type="image/x-icon" href="{% static 'web/images/logo.ico' %}">
+</head>
+<body>
+<link rel="stylesheet" href="{% static 'web/user_reviews.css' %}">
+{% include "web/header.html" %}
+<div class="top-text-user">
+    <h1>REVIEW FROM<br><span>USERS</span> </h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+</div>
+{% for review in reviews %}
+    <div class="container">
+        <img class="perfil" src="https://api.dicebear.com/7.x/thumbs/svg?seed={{forloop.counter}}" alt="">
+
+        <div class="container2">
+            <p class="username"><strong>{{review.username}}</strong></p>
+            <p class="text">{{review.review}}</p>
+
+        </div>
+    </div>
+{% endfor %}
+    <div class="leave-a-comment">
+        <form method="post" action="/user_review/">
+            {% csrf_token %}
+            <label for="comment">Leave your comment <br></label>
+            <textarea {{user_info}} {{more_user_info}} type="text" id="comment" name="comment" required></textarea>
+
+            <br>
+
+            <button type="submit" {{user_info}}>Send Comment</button>
+        </form>
+    </div>
+{% include "web/footer.html" %}
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>UARR</title>
+      <link rel="icon" type="image/x-icon" href="{% static 'web/images/logo.ico' %}">
+</head>
+<body>
+
+<link rel="stylesheet" href="{% static 'web/policity.css' %}">
+{% include "web/header.html" %}
+    <div class="container">
+
+        <h2 class="tittle"><i>POLICITY</i></h2>
+
+        <p class="text">How many websites have you visited where the user experience (UX) and user interface (UI) aren’t consistent throughout the pages? When have you not been able to find the content you seek? How many times have you struggled to navigate a convoluted organizational structure where you get lost along your journey and simply give up? The reason behind these frustrations is the lack of website governance.</p>
+
+        <p class="text">Without these structures in place, web teams are reacting to demands from stakeholders and never have the chance to think strategically. When this happens, you risk diluting the branded, strategic messaging and goals of your website. A governance plan provides a framework for website use that allows for website management to take place in a constructive and non-disruptive manner.</p>
+
+        <p class="text">These are guidelines to which all areas of your website and any other online channel must adhere. These policies should be kept to a minimum and be clear and concise to eliminate confusion and to be effective. An example of a policy would be: All pages on the website must contain a call-to-action.</p>
+
+        <button class="button" onclick="goBack()"> Accept </button>
+        <script>
+        function goBack() {
+        window. history. back();
+        }
+        </script>
+
+    </div>
+{% include "web/footer.html" %}
+</body>
+</html>

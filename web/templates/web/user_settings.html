@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>UARR</title>
+      <link rel="icon" type="image/x-icon" href="{% static 'web/images/logo.ico' %}">
+</head>
+<body>
+<link rel="stylesheet" href="{% static 'web/user_settings.css' %}">
+{% include "web/header.html" %}
+<section>
+    <div class="lefet-side-panel">
+        <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=1" alt="icon" srcset="">
+        <h1 class="username">{{username}}</h1>
+        <h1 class="type_of_user">Standard User</h1>
+        <p class="text">
+            Some Random Text
+            Some Random Text
+            Some Random Text
+            Some Random Text
+        </p>
+        <div class="social-media-flex">
+            <a target="_blank" href="https:/www.instagram.com">
+                <img src="{% static 'web/images/instagram_user_page.png' %}" alt="instagram_image" srcset="">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com">
+                <img src="{% static 'web/images/linkedin_user_page.png' %}" alt="linkedin_image" srcset="">
+            </a>
+            <a target="_blank" href="https://www.gmail.com">
+                <img src="{% static 'web/images/gmail_user_page.png' %}" alt="gmail_image" srcset="">
+            </a>
+        </div>
+
+        <a href="/logout/">Disconnect</a>
+    </div>
+    <div class="right-side-panel">
+        <form method="post" action="/user_settings/">
+            {% csrf_token %}
+            <h1>Welcome to the information</h1>
+            <p>Check or change your information as you want</p>
+            <div class="label-container">
+                <div class="container">
+                        <label for="frist_name">Frist Name</label><br>
+                        <input type="text" id="frist_name" name="frist_name" required>
+                </div>
+                <div class="container">
+                        <label for="second_name">Second Name</label><br>
+                        <input type="text" id="second_name" name="second_name" required>
+                </div>
+
+                <div class="container">
+                        <label for="gmail">Gmail</label><br>
+                        <input type="text" id="gmail" name="gmail" required>
+                </div>
+            </div>
+
+            <button type="submit">Update</button>
+
+        </form>
+    </div>
+</section>
+{% include "web/footer.html" %}
+</body>
+</html>

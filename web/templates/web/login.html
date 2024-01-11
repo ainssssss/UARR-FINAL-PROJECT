@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>UARR</title>
+      <link rel="icon" type="image/x-icon" href="{% static 'web/images/logo.ico' %}">
+</head>
+<body>
+<link rel="stylesheet" href="{% static 'web/login.css' %}">
+{% include "web/header.html" %}
+    <div class="login-container">
+        <img class="logo" src="{% static 'web/images/footer-logo.png' %}" alt="app_logo">
+        <h1>Log in</h1>
+        <h4>Improve your gaming session</h4>
+        <form method="post" action="/login/">
+            {% csrf_token %}
+            <label for="username">Username / Mail</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <p style="color:red">{{status}}</p>
+            <button type="submit">Log in</button>
+        </form>
+        <div class="links">
+            <a href="/register">Create an account</a>
+            <a href="#">Forgot your password?</a>
+        </div>
+    </div>
+{% include "web/footer.html" %}
+</body>
+</html>

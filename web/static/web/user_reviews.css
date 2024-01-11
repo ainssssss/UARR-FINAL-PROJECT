@@ -1,0 +1,111 @@
+*{
+  margin:0px;
+  padding:0px;
+  font-family: sans-serif;
+}
+
+.container {
+  min-height: 12vh;
+  margin-top: 3vw;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 1vw;
+  border: 0.1vw solid black;
+  padding: 0.3vw 0.3vw 0.3vw;
+  height: auto;
+  border-radius: 0.4vw;
+}
+
+.perfil {
+  height: 5vw;
+  border-radius: 3vw;
+  border: 0.2vw solid black;
+  margin-left: -3vw;
+}
+
+.username {
+  font-size: 1vw;
+}
+
+.text {
+font-size: 0.8vw;
+color: gray;
+}
+
+.leave-a-comment {
+  margin-left: 12vw;
+  margin-right: 12vw;
+  margin-top: 4vw;
+}
+html body div.leave-a-comment form label{
+color: #904DC4;
+font-size: 2vw;
+}
+
+html body div.leave-a-comment form input#username{
+width: 75.0vw;
+min-height: 20vh;
+padding: 1vh 1vh 1vh;
+margin-top: 1vh;
+font-size: 0.7vw;
+text-align: left;
+}
+
+html body div.leave-a-comment form button {
+  margin-top: 3vh;
+  padding: 1vw 1vw;
+  background: #904DC4;
+  color: white;
+  font-size: 1vw;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+}
+
+html body div.top-text-user h1{
+font-size: 1.5vw;
+color: #904DC4;
+font-weight: 600;
+}
+
+html body div.top-text-user h1 span{
+font-size: 3vw;
+color: black;
+}
+
+html body div.top-text-user p{
+font-size: 1.5vw;
+color: gray;
+margin-top: 1vw;
+margin-bottom: 1vw;
+}
+
+.top-text-user {
+  margin-left: 12vw;
+  margin-right: 12vw;
+  margin-top: 4vw;
+}
+
+html body div.leave-a-comment form button:hover{
+  margin-top: 3vh;
+  padding: 1vw 1vw;
+  background: #D7BCEC;
+  color: white;
+  font-size: 1vw;
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+  transition:200 ms;
+}
+
+textarea {
+  width: 74vw;
+  height: 25vh;
+  margin-top: 3vh;
+  padding: 1vw;
+  resize: none;
+  font-size: 0.7vw;
+}

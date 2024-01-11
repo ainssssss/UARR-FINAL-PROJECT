@@ -1,0 +1,17 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'web/header.css' %}">
+<header>
+  <div class="left-section-header">
+  <a href="/"><img src="{% static 'web/images/UAAR.png' %}" alt="web_logo" srcset=""></a>
+  <div class="text-header-section">
+    <a href="/"><p>Home</p></a>
+    <a href="/user_review"><p>User Reviews</p></a>
+    <a href="/faq"><p>Faq</p></a>
+  </div>
+  </div>
+
+  <div class="right-section-header">
+    <a href="{% static 'web/anticheat.zip' %}">Download</a>
+    <a href="{{user_page}}"><img src="{% static 'web/images/user.png' %}" alt="user_image" srcset=""></a>
+  </div>
+</header>
